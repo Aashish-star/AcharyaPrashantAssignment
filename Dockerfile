@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY /target/assignment-0.0.1-SNAPSHOT.jar /app/assignment.jar
+COPY /target/assignment-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8082
 
-ENTRYPOINT ["java","-jar","/app/assignment.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
