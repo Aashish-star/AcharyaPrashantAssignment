@@ -2,10 +2,7 @@ package org.advait.assignment.util;
 
 import java.util.Date;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.SignatureException;
+import io.jsonwebtoken.*;
 
 public class TokenUtil {
 	private static final String SECRET_KEY = "xyxad";
@@ -32,6 +29,8 @@ public class TokenUtil {
 			claims = extractAllClaims(token);
 		} catch (SignatureException e) {
 			throw new IllegalArgumentException("Invalid Token");
+		}catch (ExpiredJwtException e){
+			throw new IllegalArgumentException("Token Expired, This is for expiry scenario");
 		}
 		if (!username.equals(claims.getSubject())) {
 			throw new IllegalArgumentException("Token has Invalid username");
