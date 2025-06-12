@@ -11,8 +11,8 @@ Run Command
 ---------------------
 docker run -p 8080:8080 --name assignmentcontainer assignment-image
 
-Without docker
-*Directly run the jar by using below command*
+# Without docker
+Directly run the jar by using below command*
 
 Install java 17
 
