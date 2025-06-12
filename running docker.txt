@@ -1,7 +1,7 @@
 Build command
 --------------------
 
-docker buildx build . -t assignment-image .
+docker buildx build . -t assignment-image
 
 
 Run Command
