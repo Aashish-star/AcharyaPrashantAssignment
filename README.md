@@ -20,8 +20,6 @@ java -jar assignment-0.0.1-SNAPSHOT.jar
 
 
 
-###############################################################################################################################
-
 # API-1: SIGN-UP API (Success response) (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-up" ^
@@ -35,7 +33,6 @@ curl --location "http://localhost:8080/api/user/sign-up" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
-###############################################################################################################################
 
 # API-2: SIGN-IN API  (INDEPENDENT API)
 
@@ -43,7 +40,6 @@ curl --location "http://localhost:8080/api/user/sign-in" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
-###############################################################################################################################
 
 # API 3 PART 1:: AUTHORIZE TOKEN PART 1 (DEPENDENT ON API-2)
 
@@ -66,7 +62,6 @@ curl --location "http://localhost:8080/api/user/authorize-token" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
-###############################################################################################################################
 
 # API 4: Refresh token (DEPENDENT ON API-2)
 
