@@ -22,15 +22,14 @@ java -jar assignment-0.0.1-SNAPSHOT.jar
 
 ###############################################################################################################################
 
-API-1: SIGN-UP API (Success response) (INDEPENDENT API)
-curl:: 
+# API-1: SIGN-UP API (Success response) (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-up" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
 
-API-1: SIGN-UP API (User exist response) (INDEPENDENT API)
+# API-1: SIGN-UP API (User exist response) (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-up" ^
 --header "Content-Type: application/json" ^
@@ -38,7 +37,7 @@ curl --location "http://localhost:8080/api/user/sign-up" ^
 
 ###############################################################################################################################
 
-API-2: SIGN-IN API  (INDEPENDENT API)
+# API-2: SIGN-IN API  (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-in" ^
 --header "Content-Type: application/json" ^
@@ -46,21 +45,21 @@ curl --location "http://localhost:8080/api/user/sign-in" ^
 
 ###############################################################################################################################
 
-API 3 PART 1:: AUTHORIZE TOKEN PART 1 (DEPENDENT ON API-2)
+# API 3 PART 1:: AUTHORIZE TOKEN PART 1 (DEPENDENT ON API-2)
 
 curl --location "http://localhost:8080/api/user/authorize-token" ^
 --header "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmN4eXoiLCJpYXQiOjE3NDk5NzkxNzksImV4cCI6MTc0OTk4MDA3OX0.BiuHYVFpGgl5MlvdlYIeEK_phVWsfwSI2Q_NpqB1r8o" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
-API 3 PART 2:: EXPIRY TOKEN (INDEPENDENT API)
+# API 3 PART 2:: EXPIRY TOKEN (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/authorize-token" ^
 --header "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb2huIiwiaWF0IjoxNzQ5NTU1MTEyLCJleHAiOjE3NDk1NTYwMTJ9.WvKZTinLB7FW1F6WoZanJGuQyie2yZhKP0Dr0EyqG5w" ^
 --header "Content-Type: application/json" ^
 --data-raw "{\"email\": \"abcxyz@gmail.com\", \"password\": \"abcxyz1123\", \"userName\": \"abcxyz\"}"
 
-API 3 PART 3:: INVALID TOKEN (INDEPENDENT API)
+# API 3 PART 3:: INVALID TOKEN (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/authorize-token" ^
 --header "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb2huIiwiaWF0IjoxNzQ5NTU1MTEyLCJleHAiOjE3NDk1TYwMTJ9.WvKZTinLB7FW1F6WoZanJGuQyie2yZhKP0Dr0EyqG5w" ^
@@ -69,7 +68,7 @@ curl --location "http://localhost:8080/api/user/authorize-token" ^
 
 ###############################################################################################################################
 
-API 4: Refresh token (DEPENDENT ON API-2)
+# API 4: Refresh token (DEPENDENT ON API-2)
 
 curl --location "http://localhost:8080/api/user/refresh-token" ^
 --header "Content-Type: application/json" ^
