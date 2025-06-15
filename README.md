@@ -11,7 +11,8 @@ Run Command
 ---------------------
 docker run -p 8080:8080 --name assignmentcontainer assignment-image
 
-Dependent API:: From API 2 you will get the accessToken , That you need to pass in API 3 Part 1 and refreshToken you need to pass API 4. Started from Bearer to end
+Dependent API:: From API 2 you will get the accessToken , That you need to pass in API 3 Part 1 and refreshToken you need to pass API 4. Started from Bearer to end.
+
 Independent API:: No dependecy to other
 
 # API-1: SIGN-UP API (Success response) (INDEPENDENT API)
