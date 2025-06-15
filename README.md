@@ -5,7 +5,7 @@ Refer request_response_API.docx. It has all request and response with screenshot
 Build command
 --------------------
 
-docker buildx build . -t assignment-image .
+docker buildx build . -t assignment-image
 
 Run Command
 ---------------------
