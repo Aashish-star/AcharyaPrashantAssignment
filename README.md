@@ -11,15 +11,6 @@ Run Command
 ---------------------
 docker run -p 8080:8080 --name assignmentcontainer assignment-image
 
-# Without docker
-Directly run the jar by using below command*
-
-Install java 17
-
-java -jar assignment-0.0.1-SNAPSHOT.jar
-
-
-
 # API-1: SIGN-UP API (Success response) (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-up" ^
