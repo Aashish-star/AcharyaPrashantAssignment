@@ -15,6 +15,8 @@ Dependent API:: From API 2 you will get the accessToken , That you need to pass 
 
 Independent API:: No dependecy to other
 
+Run the curl cmd from windows otherwise you need to do  single quotes instead of double
+
 # API-1: SIGN-UP API (Success response) (INDEPENDENT API)
 
 curl --location "http://localhost:8080/api/user/sign-up" ^
