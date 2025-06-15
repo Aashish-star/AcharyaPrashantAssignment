@@ -1,4 +1,4 @@
-Refer Advait request response API.docx. It has all request and response with screenshot
+Refer request_response_API.docx. It has all request and response with screenshot
 
 # Below command is to build and run it.
 
@@ -10,6 +10,15 @@ docker buildx build . -t assignment-image .
 Run Command
 ---------------------
 docker run -p 8080:8080 --name assignmentcontainer assignment-image
+
+# Without docker
+Directly run the jar by using below command*
+
+Install java 17
+
+java -jar assignment-0.0.1-SNAPSHOT.jar
+
+
 
 ###############################################################################################################################
 
@@ -65,3 +74,4 @@ API 4: Refresh token
 curl --location "https://bookish-lamp-j7pxx7g7qr42j5xr-8080.app.github.dev/api/user/refresh-token" ^
 --header "Content-Type: application/json" ^
 --data "{\"refreshToken\": \"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmN4eXoiLCJpYXQiOjE3NDk5NzkxNzksImV4cCI6MTc0OTk4Mjc3OX0.6I2XTsYqKQoGkN7eJKO4Es4lsybTO_jzl5o4FTtSUbg\"}"
+
